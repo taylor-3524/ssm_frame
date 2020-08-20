@@ -8,10 +8,10 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <!-- Mysql数据库连接的信息：驱动类、连接地址、用户名、密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/teacher"
-                        userId="root"
-                        password="mdzz123456">
+        <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+                        connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:orcl"
+                        userId="DP8D"
+                        password="DP8D">
         </jdbcConnection>
 
 
@@ -42,10 +42,10 @@
         </javaClientGenerator>
 
         <!-- 指定数据表 -->
-        <table schema="" tableName="users"></table>
-        <table schema="" tableName="discuss"></table>
+        <table schema="DP8D" tableName="CWM_SYS_SIGN_MODEL"></table>
+<!--        <table schema="" tableName="discuss"></table>
         <table schema=""  tableName="mainposts"/>
-        <table schema=""  tableName="reply"/>
+        <table schema=""  tableName="reply"/>-->
 
 
     </context>

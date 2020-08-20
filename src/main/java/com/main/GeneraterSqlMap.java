@@ -15,7 +15,7 @@ public class GeneraterSqlMap {
         List<String> warnings = new ArrayList<String>();
         boolean overwrite = true;
         // 指定配置文件
-        File configFile = new File("D:\\file\\webapp\\teacher_manager_system\\src\\main\\resources\\generatorConfig.xml");
+        File configFile = new File("E:\\file\\webapp\\ssm_frame\\src\\main\\resources\\generatorConfig.xml");
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(configFile);
         DefaultShellCallback callback = new DefaultShellCallback(overwrite);
